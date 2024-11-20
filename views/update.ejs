@@ -11,13 +11,12 @@
       <div class="nav bg-green-800 h-10">
         <ul class="flex justify-center gap-5">
           <li><a href="/">HOME</a></li>
-          <li><a href="/Update">UPDATE</a></li>
           <li><a href="/Users">USERS</a></li>
         </ul>
       </div>
       <h1 class="text-blue-900"><a href="/">Back To Home</a></h1>
       <div class="form p-10 flex justify-center">
-        <form action="">
+        <form action="/update/<%= user._id %>" method="post">
           <h1 class="heading text-yellow-800 mt-5 mb-5 text-center">
             UPDATE USERS
           </h1>
@@ -45,7 +44,7 @@
           <input
             type="submit"
             class="block outline-none px-5 py-2 mt-5 bg-yellow-700 rounded-lg text-white"
-            value="Update"
+            value="UPDATE"
           />
         </form>
       </div>
